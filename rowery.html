@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rowery z silnikiem Shimano EP6</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#15150F; --bg-card:#1E1E16; --ivory:#EDEAE0; --ivory-dim:#A8A599;
+    --accent:#9FEF3D; --steel:#6B6B63; --line:#333329;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{background:var(--bg);color:var(--ivory);font-family:'Inter',sans-serif;line-height:1.6;}
+  h1,h2{font-family:'Oswald',sans-serif;text-transform:uppercase;letter-spacing:0.02em;}
+  .wrap{max-width:1100px;margin:0 auto;padding:0 32px;}
+  nav{display:flex;justify-content:space-between;align-items:center;padding:28px 32px;max-width:1100px;margin:0 auto;}
+  .logo{font-family:'Oswald',sans-serif;font-weight:600;font-size:20px;}
+  .logo span{color:var(--accent);}
+  nav a{color:var(--ivory-dim);text-decoration:none;font-size:14px;margin-left:32px;}
+  nav a:hover{color:var(--accent);}
+  .header{padding:48px 0 40px;border-bottom:1px solid var(--line);margin-bottom:48px;}
+  .header h1{font-size:36px;font-weight:600;margin-bottom:12px;}
+  .header p{color:var(--ivory-dim);font-size:16px;}
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-bottom:80px;}
+  .card{background:var(--bg-card);border:1px solid var(--line);border-radius:8px;padding:28px;}
+  .card .type{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--accent);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:12px;}
+  .card h3{font-family:'Oswald',sans-serif;font-size:20px;margin-bottom:10px;}
+  .card p{color:var(--ivory-dim);font-size:14px;margin-bottom:20px;}
+  .card .price{font-family:'JetBrains Mono',monospace;font-size:22px;color:var(--ivory);font-weight:600;}
+  .back{display:inline-block;color:var(--ivory-dim);text-decoration:none;font-size:14px;margin-bottom:24px;border-bottom:1px solid var(--steel);padding-bottom:2px;}
+  .back:hover{color:var(--accent);}
+  @media (max-width:800px){.grid{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">EP6<span>.</span>RIDE</div>
+  <div><a href="index.html">Strona główna</a></div>
+</nav>
+
+<div class="wrap">
+  <div class="header">
+    <a href="index.html" class="back">← wróć do strony głównej</a>
+    <h1>Modele z silnikiem EP6</h1>
+    <p>Wybór ram i konfiguracji dopasowanych do różnych stylów jazdy.</p>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <div class="type">e-mtb</div>
+      <h3>Trail 780 EP6</h3>
+      <p>Pełne zawieszenie, aluminiowa rama, akumulator 630 Wh — do agresywnej jazdy w terenie.</p>
+      <div class="price">12 900 zł</div>
+    </div>
+    <div class="card">
+      <div class="type">trekking</div>
+      <h3>Cross City EP6</h3>
+      <p>Lekka rama, wygodna pozycja, zasięg do 120 km na jednym ładowaniu.</p>
+      <div class="price">9 400 zł</div>
+    </div>
+    <div class="card">
+      <div class="type">cargo</div>
+      <h3>Load Runner EP6 Cargo</h3>
+      <p>Wzmocniona konstrukcja pod większe obciążenie, idealna do miasta i dostaw.</p>
+      <div class="price">14 200 zł</div>
+    </div>
+  </div>
+</div>
+
+<footer style="border-top:1px solid var(--line);padding:32px;text-align:center;color:var(--steel);font-size:13px;">
+  Strona demonstracyjna stworzona jako ćwiczenie edukacyjne.
+</footer>
+
+</body>
+</html>
